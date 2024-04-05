@@ -15,8 +15,9 @@ namespace GameEngine.GameSession
             CurrentPlayer = new Entity();
             CurrentPlayer.Name = "Bro";
             CurrentPlayer.CharacterClass = "Swordsman";
+            CurrentPlayer.HitPoints = 0;
             CurrentPlayer.Gold = 100000;
-            CurrentPlayer.ExperiencePoints = 0;
+            CurrentPlayer.ExperiencePoints = 10;
             CurrentPlayer.Level = 1;
         }
     }

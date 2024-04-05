@@ -19,6 +19,10 @@
             <ColumnDefinition Width="300"/>
         </Grid.ColumnDefinitions>
 
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\Frost\Desktop\C#\RPGame\GameEngine\Images\_image.png"/>
+        </Grid.Background>
+
         <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Content="Menu" FontSize="20" Foreground="Aquamarine"/>
         <Grid Grid.Row="1" Grid.Column="0">
             <Grid.RowDefinitions>
@@ -31,6 +35,7 @@
 
             <Grid Grid.Row="0" Grid.Column="0">
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
@@ -83,10 +88,6 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <TextBlock Grid.Row="0">
-<Image Source="C:\Users\Frost\Desktop\C#\RPGame\GameEngine\Images\_image.png"/>
-            </TextBlock>
-
             <Label Grid.Row="0" Grid.Column="0" Content="Location" FontSize="15" Foreground="Red"/>
             <Label Grid.Row="2" Grid.Column="0" Content="Enemy" FontSize="15"/>
         </Grid>
@@ -104,10 +105,10 @@
             </Grid.ColumnDefinitions>
 
             <Label Grid.Row="0" Grid.Column="0" Content="Navigation Buttons" FontSize="15" Grid.ColumnSpan="3"/>
-            <Label Grid.Row="1" Grid.Column="1" Content="^" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="20"/>
-            <Label Grid.Row="2" Grid.Column="0" Content="I-" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="20"/>
-            <Label Grid.Row="2" Grid.Column="3" Content="^" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="20"/>
-            <Label Grid.Row="3" Grid.Column="1" Content="^" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20"/>
+            <Button Grid.Row="1" Grid.Column="1" Content="North" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="20"/>
+            <Button Grid.Row="2" Grid.Column="0" Content="West" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="20"/>
+            <Button Grid.Row="2" Grid.Column="3" Content="East" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="20"/>
+            <Button Grid.Row="3" Grid.Column="1" Content="South" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20"/>
         </Grid>
     </Grid>
 </Window>
