@@ -23,7 +23,7 @@
             <ImageBrush ImageSource="C:\Users\Frost\Desktop\C#\RPGame\GameEngine\Images\_image.png"/>
         </Grid.Background>
 
-        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Content="Menu" FontSize="20" Foreground="Aquamarine"/>
+        <Button Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Content="Menu" FontSize="25" Foreground="Aquamarine" Background="Transparent" HorizontalAlignment="Left"/>
         <Grid Grid.Row="1" Grid.Column="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
@@ -48,25 +48,25 @@
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
 
-                <Label Grid.Row="0" Grid.Column="0" Content="Name:"/>
+                <Label Grid.Row="0" Grid.Column="0" Content="Name:" Foreground="AliceBlue" FontSize="14"/>
                 <Label Grid.Row="0" Grid.Column="1" Content="{Binding CurrentPlayer.Name}"/>
-                <Label Grid.Row="1" Grid.Column="0" Content="Class:"/>
+                <Label Grid.Row="1" Grid.Column="0" Content="Class:" Foreground="AliceBlue" FontSize="14"/>
                 <Label Grid.Row="1" Grid.Column="1" Content="{Binding CurrentPlayer.CharacterClass}"/>
-                <Label Grid.Row="2" Grid.Column="0" Content="hit point:"/>
+                <Label Grid.Row="2" Grid.Column="0" Content="hit point:" Foreground="AliceBlue" FontSize="14"/>
                 <Label Grid.Row="2" Grid.Column="1" Content="{Binding CurrentPlayer.HitPoints}"/>
-                <Label Grid.Row="3" Grid.Column="0" Content="Gold:"/>
+                <Label Grid.Row="3" Grid.Column="0" Content="Gold:" Foreground="AliceBlue" FontSize="14"/>
                 <Label Grid.Row="3" Grid.Column="1" Content="{Binding CurrentPlayer.Gold}"/>
-                <Label Grid.Row="4" Grid.Column="0" Content="XP:"/>
+                <Label Grid.Row="4" Grid.Column="0" Content="XP:" Foreground="AliceBlue" FontSize="14"/>
                 <Label Grid.Row="4" Grid.Column="1" Content="{Binding CurrentPlayer.ExperiencePoints}"/>
-                <Label Grid.Row="5" Grid.Column="0" Content="Level:"/>
+                <Label Grid.Row="5" Grid.Column="0" Content="Level:" Foreground="AliceBlue" FontSize="14"/>
                 <Label Grid.Row="5" Grid.Column="1" Content="{Binding CurrentPlayer.Level}"/>
             </Grid>
 
-            <Label Grid.Row="1" Grid.Column="1" Content="Game Messages" FontSize="15"/>
+            <Label Grid.Row="1" Grid.Column="1" Content="Game Messages" FontSize="20" Foreground="CornflowerBlue"/>
 
         </Grid>
-        <Label Grid.Row="2" Grid.Column="0" Content="Inventory and Quest" FontSize="15"/>
-        <Label Grid.Row="1" Grid.Column="1" Content="Game Messages" FontSize="15"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="Inventory and Quest" FontSize="20" Foreground="CornflowerBlue"/>
+        <Label Grid.Row="1" Grid.Column="1" Content="Game Messages" FontSize="20" Foreground="CornflowerBlue"/>
         <Grid Grid.Row="2" Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
@@ -76,8 +76,8 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Label Grid.Row="0" Grid.Column="0" Content="Combat" FontSize="15"/>
-            <Label Grid.Row="0" Grid.Column="1" Content="Item buttons" FontSize="15"/>
+            <Label Grid.Row="0" Grid.Column="0" Content="Combat" FontSize="20" Foreground="CornflowerBlue"/>
+            <Label Grid.Row="0" Grid.Column="1" Content="Item buttons" FontSize="20" Foreground="CornflowerBlue"/>
         </Grid>
         <Grid Grid.Row="1" Grid.Column="2">
             <Grid.RowDefinitions>
@@ -88,8 +88,8 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Label Grid.Row="0" Grid.Column="0" Content="Location" FontSize="15" Foreground="Red"/>
-            <Label Grid.Row="2" Grid.Column="0" Content="Enemy" FontSize="15"/>
+            <Label Grid.Row="0" Grid.Column="0" Content="Location" FontSize="20" Foreground="CornflowerBlue"/>
+            <Label Grid.Row="2" Grid.Column="0" Content="Enemy" FontSize="20" Foreground="CornflowerBlue"/>
         </Grid>
         <Grid Grid.Row="2" Grid.Column="2">
             <Grid.RowDefinitions>
@@ -104,7 +104,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Label Grid.Row="0" Grid.Column="0" Content="Navigation Buttons" FontSize="15" Grid.ColumnSpan="3"/>
+            <Label Grid.Row="0" Grid.Column="0" Content="Navigation Buttons" FontSize="20" Foreground="CornflowerBlue" Grid.ColumnSpan="3"/>
             <Button Grid.Row="1" Grid.Column="1" Content="North" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="20"/>
             <Button Grid.Row="2" Grid.Column="0" Content="West" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="20"/>
             <Button Grid.Row="2" Grid.Column="3" Content="East" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="20"/>
